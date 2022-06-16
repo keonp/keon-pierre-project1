@@ -1,13 +1,43 @@
 .navBar {
+    background-color: $pine;
+    padding: 20px 0;
     .wrapper ul {
         display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        width: 65%;     
+        margin: 0 auto;
     }
 
     a {
         @include menuText;
+        text-transform: uppercase;
+        &:hover {
+            color: $accent;
+            transition: 0.3s;
+        }
     }
 
-    // li:nth-child(3) {
-    //     @include
-    // }
+  .logo {
+        font-family: $fontAbrilFatface;
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .navBar {
+        transition: 0.75s;
+        .wrapper ul {
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin-bottom: 15px;
+            }
+        }
+        ul li:nth-child(3) {
+            order: 1;
+        }
+    }
 }

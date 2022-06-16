@@ -1,48 +1,48 @@
-// // Text Styling
-// h2 {
-//     font-family: $fontAbrilFatface;
-//     font-weight: normal;
-//     font-size: 4rem;
-//     color: $whiteShade;
-//     line-height: 92px;
-//     letter-spacing: 1px;
-// }
+// Text Styling
+h2 {
+    font-family: $fontAbrilFatface;
+    font-weight: normal;
+    font-size: 4rem;
+    color: $whiteShade;
+    line-height: 92px;
+    letter-spacing: 1px;
+}
 
-// h1, h3, h4, button {
-//     font-family: $fontAbrilFatface;
-//     font-weight: normal;
-//     color: $black;
-//     letter-spacing: 1px;
-// }
+h1, h3, h4, button {
+    font-family: $fontAbrilFatface;
+    font-weight: normal;
+    color: $black;
+    letter-spacing: 1px;
+}
 
-// h1 {
-//     font-size: 2.1rem;
-// }
+h1 {
+    font-size: 2.1rem;
+}
 
-// h3 {
-//     font-size: 1.6rem;
-// }
+h3 {
+    font-size: 1.6rem;
+}
 
-// h4 {
-//     font-size: 1.2rem;
-// }
+h4 {
+    font-size: 1.2rem;
+}
 
-// button {
-//     line-height: 32px;
-// }
+button {
+    line-height: 32px;
+}
 
-// @mixin menuText {
-//     font-family: $fontMontserrat;
-//     font-weight: bold;
-//     color: $whiteShade;
-//     line-height: 29px;
-//     letter-spacing: 1px;
-// }
+@mixin menuText {
+    font-family: $fontMontserrat;
+    font-weight: bold;
+    color: $whiteShade;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
 
-// p {
-//     font-family: $fontMontserrat;
-//     font-weight: normal;
-//     color: $black;
-//     line-height: 32px;
-//     letter-spacing: 0px;
-// }
+p {
+    font-family: $fontMontserrat;
+    font-weight: normal;
+    color: $black;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
