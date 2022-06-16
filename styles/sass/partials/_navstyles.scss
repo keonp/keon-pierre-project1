@@ -1,0 +1,13 @@
+.navBar {
+    .wrapper ul {
+        display: flex;
+    }
+
+    a {
+        @include menuText;
+    }
+
+    // li:nth-child(3) {
+    //     @include
+    // }
+}

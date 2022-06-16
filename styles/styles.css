@@ -249,3 +249,24 @@ p {
   margin: 0;
   padding: 0;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navBar .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navBar a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #F6F6F6;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
