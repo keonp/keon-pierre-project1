@@ -248,7 +248,8 @@ h4,
 p,
 nav,
 ul,
-li {
+li,
+a {
   margin: 0;
   padding: 0;
 }
@@ -261,7 +262,7 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1 {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
   font-size: 4rem;
@@ -270,14 +271,14 @@ h2 {
   letter-spacing: 1px;
 }
 
-h1, h3, h4, button {
+h2, h3, h4, button {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
   color: #1F1F1F;
   letter-spacing: 1px;
 }
 
-h1 {
+h2 {
   font-size: 2.1rem;
 }
 
@@ -323,15 +324,18 @@ p {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.navBar a:hover {
+.navBar li a:hover,
+.navBar li h2:hover {
   color: #E4A436;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .navBar .logo {
-  font-family: "Abril Fatface", cursive;
-  font-size: 2.1rem;
-  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #F6F6F6;
+  display: inline;
+  text-transform: uppercase;
 }
 
 @media (max-width: 930px) {
@@ -352,8 +356,12 @@ p {
     margin-bottom: 15px;
   }
   .navBar ul li:nth-child(3) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
+}
+header {
+  background-color: #345231;
+  height: 60vh;
 }
