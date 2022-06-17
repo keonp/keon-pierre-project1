@@ -272,7 +272,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h2, h3, h4, button {
+h2, h3, h4, .button {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
   color: #1F1F1F;
@@ -292,8 +292,11 @@ h4 {
   font-size: 1.2rem;
 }
 
-button {
+.button {
   line-height: 32px;
+  border: 1px solid #E4A436;
+  background-color: #E4A436;
+  padding: 10px 20px;
 }
 
 p {
@@ -365,8 +368,7 @@ p {
 }
 header {
   background-color: #345231;
-  height: 95vh;
-  max-height: 676px;
+  height: 676px;
 }
 header .headerContainer {
   display: -webkit-box;
@@ -451,5 +453,21 @@ header .headerImgContainer img {
 @media (max-width: 380px) {
   header .headerContainer .curvedTextContainer {
     top: 5vw;
+  }
+}
+.about {
+  background-color: #F6F6F6;
+}
+.about .aboutContainer {
+  padding: 180px 0 90px;
+  text-align: center;
+}
+.about .aboutContainer > * {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 765px) {
+  .about .aboutContainer {
+    padding-top: 70%;
   }
 }

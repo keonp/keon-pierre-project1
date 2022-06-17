@@ -1,7 +1,6 @@
 header {
     background-color: $pine;
-    height: 95vh;
-    max-height: 676px;
+    height: 676px;
 
     .headerContainer {
         display: flex;
@@ -74,7 +73,6 @@ header {
     header {
         .headerContainer {
             .curvedTextContainer {
-                // left: 4.5vw;
                 top: -3vw;
             }
 

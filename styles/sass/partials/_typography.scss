@@ -9,7 +9,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h2, h3, h4, button {
+h2, h3, h4, .button {
     font-family: $fontAbrilFatface;
     font-weight: normal;
     color: $black;
@@ -29,8 +29,12 @@ h4 {
     font-size: 1.2rem;
 }
 
-button {
+.button {
     line-height: 32px;
+    border: 1px solid $accent;
+    background-color: $accent;
+    padding: 10px 20px;
+
 }
 
 @mixin menuText {

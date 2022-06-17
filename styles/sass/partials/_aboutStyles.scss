@@ -1,0 +1,19 @@
+.about {
+    background-color: $whiteShade;
+    .aboutContainer {
+        padding: 180px 0 90px;
+        text-align: center;
+        > * {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 765px) {
+    .about {
+        .aboutContainer {
+            padding-top: 70%;
+        }
+    }
+
+}
