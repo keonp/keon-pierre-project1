@@ -9,14 +9,14 @@
         margin: 0 auto;
     }
 
-    a {
+    a, span {
         @include menuText;
-        text-transform: uppercase;
+        text-transform: uppercase;  
     }
 
     li {
         a:hover,
-        h2:hover {
+        span:hover {
             color: $accent;
             transition: 0.3s;
         }
@@ -26,8 +26,8 @@
         font-weight: bold;
         line-height: 29px;
         color: $whiteShade;
-        display: inline;
-        text-transform: uppercase;
+        font-family: $fontAbrilFatface;
+        font-size: 2.1rem;
     }
 }
 

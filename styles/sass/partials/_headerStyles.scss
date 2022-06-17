@@ -1,4 +1,111 @@
 header {
     background-color: $pine;
-    height: 60vh;
+    height: 95vh;
+    max-height: 676px;
+
+    .headerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .headerTextContainer {
+        position: relative;
+
+        .curvedTextContainer {
+            background-image: url(../assets/circle-text.png);
+            background-repeat: no-repeat;
+            background-size: 133px;
+            width: 151px;
+            height: 170px;
+            position: absolute;
+            left: -55px;
+            top: -50px;
+        }
+
+        h1 {
+            font-size: 8rem;
+        }
+    }
+
+    .headerTextContainer {
+        width: 55%;
+    }
+
+    .headerImgContainer {
+        margin-top: 50px;
+        width: 40%;
+
+        img {
+            box-shadow: 20px 20px $whiteShade;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+
+    header {
+        .headerContainer {
+            flex-direction: column;
+            padding-top: 90px;
+        }
+
+        .headerTextContainer{
+            width: 100%;
+            text-align: center;
+
+            .curvedTextContainer {
+                background-size: 80%;
+                width: 16vw;
+                height: 32vh;
+                left: 5.5vw;
+                top: -5vw;
+            }
+
+            h1 {
+                font-size: 16vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 765px) {
+
+    header {
+        .headerContainer {
+            .curvedTextContainer {
+                // left: 4.5vw;
+                top: -3vw;
+            }
+
+            .headerImgContainer {
+                width: 80%;
+                img {
+                    box-shadow: -20px -20px $whiteShade;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+
+    header {
+        .headerContainer {
+            .curvedTextContainer {
+                top: -1vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+
+    header {
+        .headerContainer {
+            .curvedTextContainer {
+                top: 5vw;
+            }
+        }
+    }
 }
