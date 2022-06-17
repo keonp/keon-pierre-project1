@@ -1,0 +1,34 @@
+.generalInformation {
+
+    .wrapper {
+        margin: 0;
+    }
+    
+    .infoContainer {
+        display: flex;
+        justify-content: space-between;
+        > * {
+            width: 46%;
+        }
+    }
+
+    .generalInfoTextContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        // align-items: center;
+        .button {
+            max-width: 210px;
+        }
+        > * {
+            margin-top: 15px;
+        }
+    }
+
+    .genImgContainer {
+        background-color: $greenGrey;
+        img {
+            width: 70%
+        }
+    }
+}

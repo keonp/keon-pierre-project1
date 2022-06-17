@@ -297,6 +297,7 @@ h4 {
   border: 1px solid #E4A436;
   background-color: #E4A436;
   padding: 10px 20px;
+  text-align: center;
 }
 
 p {
@@ -470,4 +471,42 @@ header .headerImgContainer img {
   .about .aboutContainer {
     padding-top: 70%;
   }
+}
+.generalInformation .wrapper {
+  margin: 0;
+}
+.generalInformation .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.generalInformation .infoContainer > * {
+  width: 46%;
+}
+.generalInformation .generalInfoTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.generalInformation .generalInfoTextContainer .button {
+  max-width: 210px;
+}
+.generalInformation .generalInfoTextContainer > * {
+  margin-top: 15px;
+}
+.generalInformation .genImgContainer {
+  background-color: #709B6B;
+}
+.generalInformation .genImgContainer img {
+  width: 70%;
 }
