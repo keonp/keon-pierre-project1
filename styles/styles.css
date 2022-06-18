@@ -472,8 +472,8 @@ header .headerImgContainer img {
     padding-top: 70%;
   }
 }
-.generalInformation .wrapper {
-  margin: 0;
+.generalInformation .info1 {
+  margin-bottom: 75px;
 }
 .generalInformation .infoContainer {
   display: -webkit-box;
@@ -482,9 +482,10 @@ header .headerImgContainer img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 325px;
 }
 .generalInformation .infoContainer > * {
-  width: 46%;
+  width: 43%;
 }
 .generalInformation .generalInfoTextContainer {
   display: -webkit-box;
@@ -505,8 +506,31 @@ header .headerImgContainer img {
   margin-top: 15px;
 }
 .generalInformation .genImgContainer {
-  background-color: #709B6B;
+  position: relative;
 }
-.generalInformation .genImgContainer img {
-  width: 70%;
+.generalInformation .img1 img {
+  position: absolute;
+  right: -90px;
+  top: -40px;
+  -webkit-box-shadow: 20px 20px #709B6B, -20vw 20px #709B6B;
+          box-shadow: 20px 20px #709B6B, -20vw 20px #709B6B;
+}
+.generalInformation .img2 img {
+  position: absolute;
+  right: 90px;
+  top: 15px;
+  -webkit-box-shadow: 20px 20px #345231, 20vw 20px #345231;
+          box-shadow: 20px 20px #345231, 20vw 20px #345231;
+}
+.generalInformation .info2 .generalInfoTextContainer {
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.generalInformation .button a {
+  color: inherit;
 }

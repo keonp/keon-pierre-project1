@@ -1,14 +1,16 @@
 .generalInformation {
-
-    .wrapper {
-        margin: 0;
-    }
     
+    .info1 {
+        margin-bottom: 75px;
+    }
+
     .infoContainer {
         display: flex;
         justify-content: space-between;
+        height: 325px;
         > * {
-            width: 46%;
+            width: 43%;
+            // width: 50%;
         }
     }
 
@@ -26,9 +28,34 @@
     }
 
     .genImgContainer {
-        background-color: $greenGrey;
+        position: relative;
+    }
+
+    .img1 {
         img {
-            width: 70%
+            position: absolute;
+            right: -90px;
+            top: -40px;
+            box-shadow: 20px 20px $greenGrey, -20vw 20px $greenGrey;
         }
+    }
+
+    .img2 {
+        img {
+            position: absolute;
+            right: 90px;
+            top: 15px;
+            box-shadow: 20px 20px $pine, 20vw 20px $pine;
+        }
+    }
+    .info2 {
+        .generalInfoTextContainer {
+            text-align: right;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+    }
+    .button a {
+        color: inherit;
     }
 }
