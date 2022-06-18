@@ -14,10 +14,17 @@
         }
     }
 
+    .info1 {
+        .generalInfoTextContainer {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    }
+
     .generalInfoTextContainer {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         // align-items: center;
         .button {
             max-width: 210px;
@@ -58,4 +65,28 @@
     .button a {
         color: inherit;
     }
+}
+
+@media (max-width: 930px) {
+    .generalInformation {
+        .infoContainer {
+            flex-direction: column;
+            > * {
+                width: 100%;
+            }
+        }
+
+
+        .genImgContainer {
+            position: unset;
+        }
+
+        .img1,
+        .img2 {
+            img {
+                position: unset;
+            }
+        }
+    }
+
 }

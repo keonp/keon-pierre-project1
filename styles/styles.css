@@ -487,6 +487,14 @@ header .headerImgContainer img {
 .generalInformation .infoContainer > * {
   width: 43%;
 }
+.generalInformation .info1 .generalInfoTextContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .generalInformation .generalInfoTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,9 +503,6 @@ header .headerImgContainer img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 .generalInformation .generalInfoTextContainer .button {
   max-width: 210px;
@@ -533,4 +538,23 @@ header .headerImgContainer img {
 }
 .generalInformation .button a {
   color: inherit;
+}
+
+@media (max-width: 930px) {
+  .generalInformation .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .generalInformation .infoContainer > * {
+    width: 100%;
+  }
+  .generalInformation .genImgContainer {
+    position: unset;
+  }
+  .generalInformation .img1 img,
+.generalInformation .img2 img {
+    position: unset;
+  }
 }
