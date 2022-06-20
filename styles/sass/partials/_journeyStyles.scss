@@ -1,0 +1,22 @@
+.journey {
+    background-color: $whiteShade;
+
+    .infoContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 0 90px;
+        .generalInfoTextContainer {
+            width: 65%;
+            p {
+                margin: 60px 0;
+            }
+        }
+    }
+
+    .genImgContainer {
+        img {
+            width: 350px;
+            box-shadow: 20px 20px $greenGrey;
+        }
+    }
+}

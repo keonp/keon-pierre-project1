@@ -577,3 +577,26 @@ header .headerImgContainer img {
             align-items: center;
   }
 }
+.journey {
+  background-color: #F6F6F6;
+}
+.journey .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 150px 0 90px;
+}
+.journey .infoContainer .generalInfoTextContainer {
+  width: 65%;
+}
+.journey .infoContainer .generalInfoTextContainer p {
+  margin: 60px 0;
+}
+.journey .genImgContainer img {
+  width: 350px;
+  -webkit-box-shadow: 20px 20px #709B6B;
+          box-shadow: 20px 20px #709B6B;
+}
