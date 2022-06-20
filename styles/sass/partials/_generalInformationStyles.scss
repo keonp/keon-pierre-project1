@@ -4,6 +4,10 @@
         margin-bottom: 75px;
     }
 
+    // Section is split between 2 rows of divs called infoContainer
+    // Each infoContainer contains 2 divs: 1 div contains an img, 1 div contains text + a link
+    // the infoContainers live on top of each other, their contents (2 divs) live beside each other
+
     .infoContainer {
         display: flex;
         justify-content: space-between;
@@ -14,6 +18,17 @@
         }
     }
 
+    .generalInfoTextContainer {
+        display: flex;
+        flex-direction: column;
+        .button {
+            max-width: 210px;
+        }
+        > * {
+            margin-top: 15px;
+        }
+    }
+
     .info1 {
         .generalInfoTextContainer {
             justify-content: flex-end;
@@ -21,16 +36,11 @@
         }
     }
 
-    .generalInfoTextContainer {
-        display: flex;
-        flex-direction: column;
-        // justify-content: flex-end;
-        // align-items: center;
-        .button {
-            max-width: 210px;
-        }
-        > * {
-            margin-top: 15px;
+    .info2 {
+        .generalInfoTextContainer {
+            // justify-content: flex-start;
+            text-align: right;
+            align-items: flex-end;  
         }
     }
 
@@ -55,13 +65,7 @@
             box-shadow: 20px 20px $pine, 20vw 20px $pine;
         }
     }
-    .info2 {
-        .generalInfoTextContainer {
-            text-align: right;
-            align-items: flex-end;
-            justify-content: flex-start;
-        }
-    }
+
     .button a {
         color: inherit;
     }
@@ -70,23 +74,47 @@
 @media (max-width: 930px) {
     .generalInformation {
         .infoContainer {
+            height: auto;
             flex-direction: column;
+            
             > * {
                 width: 100%;
             }
         }
 
-
         .genImgContainer {
-            position: unset;
+            position: static;
         }
 
-        .img1,
+        .img1 {
+            img {
+                position: static;
+                box-shadow:-20px 20px $greenGrey;
+            }
+        }
         .img2 {
             img {
-                position: unset;
+                position: static;
+                box-shadow: 20px 20px $pine;
+            }
+        }
+        
+        .generalInfoTextContainer {
+            margin-top: 75px;
+        }
+
+        .info2 {
+            .img2 {
+                order: -1;
+            }
+        }
+
+        .info1,
+        .info2 {
+            .generalInfoTextContainer {
+                text-align: center;
+                align-items: center;
             }
         }
     }
-
 }

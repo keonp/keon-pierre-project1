@@ -487,14 +487,6 @@ header .headerImgContainer img {
 .generalInformation .infoContainer > * {
   width: 43%;
 }
-.generalInformation .info1 .generalInfoTextContainer {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
 .generalInformation .generalInfoTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,6 +501,20 @@ header .headerImgContainer img {
 }
 .generalInformation .generalInfoTextContainer > * {
   margin-top: 15px;
+}
+.generalInformation .info1 .generalInfoTextContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.generalInformation .info2 .generalInfoTextContainer {
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .generalInformation .genImgContainer {
   position: relative;
@@ -527,21 +533,13 @@ header .headerImgContainer img {
   -webkit-box-shadow: 20px 20px #345231, 20vw 20px #345231;
           box-shadow: 20px 20px #345231, 20vw 20px #345231;
 }
-.generalInformation .info2 .generalInfoTextContainer {
-  text-align: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
 .generalInformation .button a {
   color: inherit;
 }
 
 @media (max-width: 930px) {
   .generalInformation .infoContainer {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -551,10 +549,31 @@ header .headerImgContainer img {
     width: 100%;
   }
   .generalInformation .genImgContainer {
-    position: unset;
+    position: static;
   }
-  .generalInformation .img1 img,
-.generalInformation .img2 img {
-    position: unset;
+  .generalInformation .img1 img {
+    position: static;
+    -webkit-box-shadow: -20px 20px #709B6B;
+            box-shadow: -20px 20px #709B6B;
+  }
+  .generalInformation .img2 img {
+    position: static;
+    -webkit-box-shadow: 20px 20px #345231;
+            box-shadow: 20px 20px #345231;
+  }
+  .generalInformation .generalInfoTextContainer {
+    margin-top: 75px;
+  }
+  .generalInformation .info2 .img2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .generalInformation .info1 .generalInfoTextContainer,
+.generalInformation .info2 .generalInfoTextContainer {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
