@@ -653,7 +653,7 @@ header .headerImgContainer img {
   background-color: #F6F6F6;
 }
 .homeFooter .footerTextContainer {
-  padding-top: 75px;
+  padding: 75px 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,4 +706,21 @@ header .headerImgContainer img {
 .homeFooter .footerBottom p {
   padding: 5px 0;
   color: white;
+}
+
+@media (max-width: 930px) {
+  .homeFooter .infoContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .homeFooter .iconContainer {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 673px) {
+  .homeFooter .infoContainer {
+    width: 100%;
+  }
 }

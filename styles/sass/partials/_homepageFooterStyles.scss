@@ -2,7 +2,7 @@
     background-color: $whiteShade;
 
     .footerTextContainer {
-        padding-top: 75px;
+        padding: 75px 0 40px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -46,4 +46,26 @@
             color: white;
         }
     }
+}
+
+@media (max-width: 930px) {
+    .homeFooter {
+
+        .infoContainer {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .iconContainer {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 673px) {
+    .homeFooter {
+        .infoContainer {
+            width: 100%;
+        }
+    }   
 }
