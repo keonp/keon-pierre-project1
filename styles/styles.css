@@ -724,3 +724,15 @@ header .headerImgContainer img {
     width: 100%;
   }
 }
+.contactHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
