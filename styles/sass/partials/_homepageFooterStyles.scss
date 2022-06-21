@@ -1,0 +1,10 @@
+.homeFooter {
+    background-color: $whiteShade;
+    .footerTextContainer {
+        display: flex;
+        flex-wrap: wrap;
+        > * {
+            width: 50%;
+        }
+    }
+}
