@@ -589,14 +589,35 @@ header .headerImgContainer img {
           justify-content: space-between;
   padding: 150px 0 90px;
 }
-.journey .infoContainer .generalInfoTextContainer {
+.journey .generalInfoTextContainer {
   width: 65%;
 }
-.journey .infoContainer .generalInfoTextContainer p {
+.journey .generalInfoTextContainer p {
   margin: 60px 0;
 }
+.journey .genImgContainer {
+  width: 27.5%;
+}
 .journey .genImgContainer img {
-  width: 350px;
   -webkit-box-shadow: 20px 20px #709B6B;
           box-shadow: 20px 20px #709B6B;
+}
+
+@media (max-width: 930px) {
+  .journey .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journey .infoContainer > * {
+    width: 100%;
+  }
+  .journey .generalInfoTextContainer {
+    text-align: center;
+    margin-top: 75px;
+  }
+  .journey .generalInfoTextContainer p {
+    margin: 30px 0;
+  }
 }

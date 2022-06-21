@@ -5,18 +5,38 @@
         display: flex;
         justify-content: space-between;
         padding: 150px 0 90px;
-        .generalInfoTextContainer {
-            width: 65%;
-            p {
-                margin: 60px 0;
-            }
+    }
+
+    .generalInfoTextContainer {
+        width: 65%;
+        p {
+            margin: 60px 0;
         }
     }
 
     .genImgContainer {
+        width: 27.5%;
         img {
-            width: 350px;
             box-shadow: 20px 20px $greenGrey;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .journey {
+        .infoContainer {
+            flex-direction: column;
+            > * {
+                width: 100%;
+            }
+        }
+
+        .generalInfoTextContainer {
+            text-align: center;
+            margin-top: 75px;
+            p {
+                margin: 30px 0;
+            }
         }
     }
 }
