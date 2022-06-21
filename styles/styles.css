@@ -653,12 +653,57 @@ header .headerImgContainer img {
   background-color: #F6F6F6;
 }
 .homeFooter .footerTextContainer {
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.homeFooter .textContainer {
+  max-width: 541px;
+}
+.homeFooter .textContainer h3 {
+  margin-top: 6px;
+}
+.homeFooter .textContainer p {
+  margin-top: 20px;
+}
+.homeFooter .infoContainer {
+  width: 47.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
 }
-.homeFooter .footerTextContainer > * {
-  width: 50%;
+.homeFooter .iconContainer {
+  background-color: #E4A436;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homeFooter .footerBottom {
+  background-color: black;
+  text-align: center;
+}
+.homeFooter .footerBottom p {
+  padding: 5px 0;
+  color: white;
 }
