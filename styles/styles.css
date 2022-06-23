@@ -736,3 +736,29 @@ header .headerImgContainer img {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+.contactHeader h1 {
+  margin-bottom: -16px;
+}
+
+@media (max-width: 930px) {
+  .contactHeader h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 430px) {
+  .contactHeader h1 {
+    text-orientation: upright;
+    -webkit-writing-mode: sideways-rl;
+        -ms-writing-mode: sideways-rl;
+            writing-mode: sideways-rl;
+    height: 53vh;
+  }
+  .contactHeader h1 span {
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+  }
+}
+.contactBody {
+  background-color: #F6F6F6;
+}

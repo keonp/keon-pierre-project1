@@ -5,5 +5,28 @@
     height: 70vh;
     display: flex;
     align-items: flex-end;
+    h1 {
+        margin-bottom: -16px;
+    }
+}
 
+@media (max-width: 930px) {
+    .contactHeader {
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .contactHeader {
+        h1 {
+            text-orientation: upright;
+            writing-mode: sideways-rl;
+            height: 53vh;
+            span {
+                writing-mode: initial;
+            }
+        }
+    }
 }
