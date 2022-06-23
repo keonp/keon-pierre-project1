@@ -761,4 +761,29 @@ header .headerImgContainer img {
 }
 .contactBody {
   background-color: #F6F6F6;
+  padding-top: 75px;
+}
+.contactBody .contactBodyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactBody .contactContainer {
+  background-color: white;
+}
+.contactBody .contactContainer .socialMediaIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactBody .contactContainer .socialMediaIcons > * {
+  width: 20px;
+  height: 20px;
+  color: #345231;
+}
+.contactBody .myForm fieldset {
+  border: none;
+}
+.contactBody .myForm fieldset textarea {
+  display: block;
 }
