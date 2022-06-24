@@ -862,3 +862,24 @@ header .headerImgContainer img {
     width: 100%;
   }
 }
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.blogHeader h1 {
+  margin-bottom: -16px;
+}
+
+@media (max-width: 609px) {
+  .blogHeader h1 {
+    text-align: center;
+  }
+}

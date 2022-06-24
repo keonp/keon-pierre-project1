@@ -1,0 +1,19 @@
+.blogHeader {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    h1 {
+        margin-bottom: -16px;
+    }
+}
+
+@media (max-width: 609px) {
+    .blogHeader {
+        h1 {
+            text-align: center;
+        }
+    }
+}
