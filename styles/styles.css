@@ -249,7 +249,9 @@ p,
 nav,
 ul,
 li,
-a {
+a,
+input,
+fieldset {
   margin: 0;
   padding: 0;
 }
@@ -298,6 +300,7 @@ h4 {
   background-color: #E4A436;
   padding: 10px 20px;
   text-align: center;
+  font-size: 1rem;
 }
 
 p {
@@ -773,6 +776,8 @@ header .headerImgContainer img {
 }
 .contactBody .contactContainer {
   background-color: white;
+  width: 29%;
+  height: 100%;
 }
 .contactBody .contactContainer .socialMediaIcons {
   display: -webkit-box;
@@ -782,7 +787,7 @@ header .headerImgContainer img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 195px;
-  margin: 30px 20px;
+  margin: 40px 20px 30px;
 }
 .contactBody .contactContainer .socialMediaIcons > * {
   width: 20px;
@@ -791,6 +796,9 @@ header .headerImgContainer img {
 }
 .contactBody .contactContainer .socialMediaIcons i {
   font-size: 1.4rem;
+}
+.contactBody .contactContainer .textContainer {
+  margin-bottom: 30px;
 }
 .contactBody .contactContainer .textContainer p {
   margin-left: 20px;
@@ -804,8 +812,10 @@ header .headerImgContainer img {
 }
 .contactBody .myForm fieldset {
   border: none;
+  font-size: 0;
 }
-.contactBody .myForm fieldset > *:not(.button) {
+.contactBody .myForm fieldset input,
+.contactBody .myForm fieldset textarea {
   border: none;
   padding: 20px;
   font-size: 0.9rem;
@@ -813,7 +823,21 @@ header .headerImgContainer img {
   color: #1F1F1F;
   margin-bottom: 20px;
 }
+.contactBody .myForm fieldset .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactBody .myForm fieldset input {
+  width: 49%;
+}
 .contactBody .myForm fieldset textarea {
   display: block;
+  width: 100%;
+}
+.contactBody .myForm fieldset .button {
   width: 100%;
 }

@@ -9,11 +9,14 @@
 
     .contactContainer {
         background-color: white;
+        width: 29%;
+        height: 100%;      
+
         .socialMediaIcons {
             display: flex;
             justify-content: space-between;
             max-width: 195px;
-            margin: 30px 20px;
+            margin: 40px 20px 30px;
             > * {
                 width: 20px;
                 height: 20px;
@@ -26,6 +29,7 @@
         }
 
         .textContainer {
+            margin-bottom: 30px;
 
             p {
                 margin-left: 20px;
@@ -40,10 +44,12 @@
 
     .myForm {
         width: 68%;
-        
+
         fieldset {
             border: none;
-            > *:not(.button) {
+            font-size: 0;
+            input,
+            textarea {
                 border: none;
                 padding: 20px;
                 font-size: 0.9rem;
@@ -52,8 +58,21 @@
                 margin-bottom: 20px;
             }
 
+            .inputs {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            input {
+                width: 49%;
+            }
+
             textarea {
                 display: block;
+                width: 100%;
+            }
+
+            .button {
                 width: 100%;
             }
         }
