@@ -4,21 +4,27 @@
 
     .wrapper {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .commentContainer  {
+        display: flex;
     }
 
 
     .aboutContainer {
-        width: 25%;
+        width: 31%;
     }
 
     .aboutContainer > *,
     .blogContainer >*:not(.myForm) {
         > * {
             background-color: white;
+            padding: 35px;
         }
     }
 
     .blogContainer {
-        width: 75%;
+        width: 66.5%;
     }
 }
