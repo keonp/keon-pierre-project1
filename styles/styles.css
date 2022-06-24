@@ -264,6 +264,15 @@ a {
   text-decoration: none;
 }
 
+.footerBottom {
+  background-color: black;
+  text-align: center;
+}
+.footerBottom p {
+  padding: 5px 0;
+  color: white;
+}
+
 h1 {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
@@ -702,14 +711,6 @@ header .headerImgContainer img {
       -ms-flex-align: center;
           align-items: center;
 }
-.homeFooter .footerBottom {
-  background-color: black;
-  text-align: center;
-}
-.homeFooter .footerBottom p {
-  padding: 5px 0;
-  color: white;
-}
 
 @media (max-width: 930px) {
   .homeFooter .infoContainer {
@@ -764,7 +765,7 @@ header .headerImgContainer img {
 }
 .contactBody {
   background-color: #F6F6F6;
-  padding-top: 75px;
+  padding: 75px 0;
 }
 .contactBody .contactBodyContainer {
   display: -webkit-box;
@@ -837,7 +838,27 @@ header .headerImgContainer img {
 .contactBody .myForm fieldset textarea {
   display: block;
   width: 100%;
+  resize: none;
 }
 .contactBody .myForm fieldset .button {
   width: 100%;
+}
+
+@media (max-width: 930px) {
+  .contactBody .contactBodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBody .contactContainer {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .contactBody .myForm {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
 }
