@@ -767,6 +767,9 @@ header .headerImgContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contactBody .contactContainer {
   background-color: white;
@@ -775,15 +778,42 @@ header .headerImgContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 195px;
+  margin: 30px 20px;
 }
 .contactBody .contactContainer .socialMediaIcons > * {
   width: 20px;
   height: 20px;
   color: #345231;
 }
+.contactBody .contactContainer .socialMediaIcons i {
+  font-size: 1.4rem;
+}
+.contactBody .contactContainer .textContainer p {
+  margin-left: 20px;
+}
+.contactBody .contactContainer .textContainer p:first-child {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contactBody .myForm {
+  width: 68%;
+}
 .contactBody .myForm fieldset {
   border: none;
 }
+.contactBody .myForm fieldset > *:not(.button) {
+  border: none;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  color: #1F1F1F;
+  margin-bottom: 20px;
+}
 .contactBody .myForm fieldset textarea {
   display: block;
+  width: 100%;
 }

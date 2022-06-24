@@ -4,25 +4,57 @@
 
     .contactBodyContainer {
         display: flex;
+        justify-content: space-between;
     }
 
     .contactContainer {
         background-color: white;
         .socialMediaIcons {
             display: flex;
+            justify-content: space-between;
+            max-width: 195px;
+            margin: 30px 20px;
             > * {
                 width: 20px;
                 height: 20px;
                 color: $pine;
             }
+
+            i {
+                font-size: 1.4rem;
+            }
+        }
+
+        .textContainer {
+
+            p {
+                margin-left: 20px;
+            }
+
+            p:first-child {
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
         }
     }
 
     .myForm {
+        width: 68%;
+        
         fieldset {
             border: none;
+            > *:not(.button) {
+                border: none;
+                padding: 20px;
+                font-size: 0.9rem;
+                font-family: $fontMontserrat;
+                color: $black;
+                margin-bottom: 20px;
+            }
+
             textarea {
                 display: block;
+                width: 100%;
             }
         }
     }
