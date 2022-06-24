@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navBar">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <span class="logo">Willow</span>
+                </li>
+                <li>
+                    <a href="./blogPost.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="blogHeader">
+        <div class="wrapper">
+            <h1>Blog & News</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog">
+            <div class="wrapper">
+
+                <!-- LEFT COLUMN -->
+                <div class="aboutContainer">
+                    <div class="profile">
+                        <div class="profileImgContainer">
+                            <img src="./assets/blog-image-2.jpg" alt="">
+                        </div>
+                        <h4>About Willow</h4>
+                        <p>Lorem ipsum nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="">Find out more.</a></p>
+                    </div>
+
+                    <div class="recentPosts">
+                        <h4>Recent Posts</h4>
+                        <ul>
+                            <li>
+                                <p>Donec facilisis tortor ut</p>
+                            </li>
+                            <li>
+                                <p>Augue lacinia at viverra</p>
+                            </li>
+                            <li>
+                                <p>Semper sed sapien metus</p>
+                            </li>
+                            <li>
+                                <p>Scelerisque nec pharetra id</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="blogContainer">
+                    <div class="blogText">
+                        <article>
+                            <h3>My Favourite Travel Destinations</h3>
+
+                            <p>Monday October 8th, 2018 by Willow</p>
+
+                            <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+
+                            <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapein convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                            
+                            <p></p>                      
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </article>
+                    </div>
+
+                    <div class="blogComments">
+
+                        <div class="commentContainer">
+                            <div class="commenterImg">
+                                <img src="./assets/blog-image-3.jpg" alt="">
+                            </div>
+                            <div class="comment">
+                                <p>Tuesday October 9th, 2018 by Barb</p>
+                                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorpoer metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                            </div>
+                        </div>
+
+                        <div class="commentContainer">
+                            <div class="commenterImg">
+                                <img src="./assets/blog-image-4.jpg" alt="">
+                            </div>
+                            <div class="comment">
+                                <p>Wednesday October 10th, 2018 by Daisy</p>
+                                <p>Donec viverra eleifend lacus, vitae ullamcorpoer metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form action="" class="myForm">
+                        <fieldset>
+                            <div class="inputs">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Name">
+
+                                <label for="email" class="sr-only">Email address</label>
+                                <input type="email" id="email" placeholder="Email address">
+                            </div>
+
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                            <button type="submit" class="button">Post Comment</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="blogFooter">
+        <div class="footerBottom">
+            <p>Copyright &copy; 2022 Juno College</p>
+        </div>
+    </footer>
+</body>
+</html>

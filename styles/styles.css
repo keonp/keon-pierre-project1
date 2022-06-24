@@ -883,3 +883,22 @@ header .headerImgContainer img {
     text-align: center;
   }
 }
+.blog {
+  background-color: #F6F6F6;
+  padding-top: 75px;
+}
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog .aboutContainer {
+  width: 25%;
+}
+.blog .aboutContainer > * > *,
+.blog .blogContainer > *:not(.myForm) > * {
+  background-color: white;
+}
+.blog .blogContainer {
+  width: 75%;
+}
