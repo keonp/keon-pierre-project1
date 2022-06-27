@@ -862,6 +862,17 @@ header .headerImgContainer img {
     width: 100%;
   }
 }
+@media (max-width: 558px) {
+  .contactBodyContainer .myForm fieldset .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBodyContainer .myForm fieldset input {
+    width: 100%;
+  }
+}
 .blogHeader {
   background-image: url(../assets/blog-image-1.jpg);
   background-position: center;
@@ -985,4 +996,78 @@ header .headerImgContainer img {
 }
 .blog .myForm fieldset .button {
   width: 100%;
+}
+
+@media (max-width: 930px) {
+  .blog .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .aboutContainer {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .blog .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog .aboutTextContainer {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog .recentPosts h4 {
+    text-align: center;
+  }
+  .blog .blogContainer {
+    width: 100%;
+  }
+  .blog .blogContainer h3 {
+    text-align: center;
+  }
+  .blog .commentContainer .comment {
+    width: 84%;
+  }
+  .blog .commentContainer .commenterImg {
+    min-width: 11.5%;
+    width: auto;
+  }
+}
+@media (max-width: 558px) {
+  .blog .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .aboutTextContainer {
+    width: 100%;
+  }
+  .blog .myForm fieldset .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .myForm fieldset input {
+    width: 100%;
+  }
 }

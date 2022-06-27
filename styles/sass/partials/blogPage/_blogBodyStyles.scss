@@ -110,3 +110,78 @@
         }
     }
 }
+
+@media(max-width: 930px) {
+    .blog {
+        .wrapper {
+            flex-direction: column;
+        }
+
+        .aboutContainer {
+            width: 100%;
+            margin-bottom: 24px;;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .aboutTextContainer {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .recentPosts {
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .blogContainer {
+            width: 100%;
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .commentContainer  {
+            .comment {
+                width: 84%;
+            }
+            
+            .commenterImg {
+                min-width: 11.5%;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 558px) {
+    .blog {
+        .profile {
+            flex-direction: column;
+        }
+
+        .aboutTextContainer {
+            width: 100%;
+        }
+
+        .myForm {
+            fieldset {
+                .inputs {
+                    flex-direction: column;
+                }
+                input {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}

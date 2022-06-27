@@ -99,3 +99,20 @@
 
     }
 }
+
+@media (max-width: 558px) {
+    .contactBodyContainer {
+        
+        .myForm {
+            fieldset {
+                .inputs {
+                    flex-direction: column;
+                }
+                input {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
