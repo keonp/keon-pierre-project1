@@ -396,19 +396,22 @@ header .headerContainer {
   padding-top: 40px;
 }
 header .headerTextContainer {
-  position: relative;
+  width: 55%;
 }
 header .headerTextContainer h1 {
   font-size: 8rem;
+  display: inline;
+  position: relative;
 }
 header .headerTextContainer h1::before {
-  content: url(../assets/circle-text.png);
+  content: "";
+  background: url(../assets/circle-text.png) no-repeat;
+  background-size: 88%;
   position: absolute;
   left: -7.7%;
-  top: -50px;
-}
-header .headerTextContainer {
-  width: 55%;
+  top: 5.1%;
+  height: 170px;
+  width: 151px;
 }
 header .headerImgContainer {
   margin-top: 50px;
@@ -432,10 +435,10 @@ header .headerImgContainer img {
     text-align: center;
   }
   header .headerTextContainer h1 {
-    font-size: 16vw;
+    font-size: 15vw;
   }
   header .headerTextContainer h1::before {
-    left: 7%;
+    background-size: 12vw;
   }
 }
 @media (max-width: 765px) {

@@ -9,33 +9,23 @@ header {
         padding-top: 40px;
     }
     .headerTextContainer {
-        position: relative;
-
-        // .curvedTextContainer {
-        //     background-image: url(../assets/circle-text.png);
-        //     background-repeat: no-repeat;
-        //     background-size: 133px;
-        //     width: 151px;
-        //     height: 170px;
-        //     position: absolute;
-        //     left: -55px;
-        //     top: -50px;
-        // }
+        width: 55%;
 
         h1 {
             font-size: 8rem;
+            display: inline;
+            position: relative;
             &::before {
-                content: url(../assets/circle-text.png);
+                content: "";
+                background: url(../assets/circle-text.png) no-repeat;
+                background-size: 88%;
                 position: absolute;
-                // left: -55px;
                 left: -7.7%;
-                top: -50px;
+                top: 5.1%;
+                height: 170px;
+                width: 151px;
             }
         }
-    }
-
-    .headerTextContainer {
-        width: 55%;
     }
 
     .headerImgContainer {
@@ -60,18 +50,10 @@ header {
             width: 100%;
             text-align: center;
 
-            // .curvedTextContainer {
-            //     background-size: 80%;
-            //     width: 16vw;
-            //     height: 32vh;
-            //     left: 5.5vw;
-            //     top: -5vw;
-            // }
-
             h1 {
-                font-size: 16vw;
+                font-size: 15vw;
                 &::before {
-                    left: 7%;
+                    background-size: 12vw;
                 }
             }
         }
@@ -82,38 +64,12 @@ header {
 
     header {
         .headerContainer {
-            // .curvedTextContainer {
-            //     top: -3vw;
-            // }
-
             .headerImgContainer {
                 width: 80%;
                 img {
                     box-shadow: -20px -20px $whiteShade;
                 }
             }
-        }
-    }
-}
-
-@media (max-width: 630px) {
-
-    header {
-        .headerContainer {
-            // .curvedTextContainer {
-            //     top: -1vw;
-            // }
-        }
-    }
-}
-
-@media (max-width: 380px) {
-
-    header {
-        .headerContainer {
-            // .curvedTextContainer {
-            //     top: 5vw;
-            // }
         }
     }
 }
