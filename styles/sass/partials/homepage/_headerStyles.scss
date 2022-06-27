@@ -11,19 +11,26 @@ header {
     .headerTextContainer {
         position: relative;
 
-        .curvedTextContainer {
-            background-image: url(../assets/circle-text.png);
-            background-repeat: no-repeat;
-            background-size: 133px;
-            width: 151px;
-            height: 170px;
-            position: absolute;
-            left: -55px;
-            top: -50px;
-        }
+        // .curvedTextContainer {
+        //     background-image: url(../assets/circle-text.png);
+        //     background-repeat: no-repeat;
+        //     background-size: 133px;
+        //     width: 151px;
+        //     height: 170px;
+        //     position: absolute;
+        //     left: -55px;
+        //     top: -50px;
+        // }
 
         h1 {
             font-size: 8rem;
+            &::before {
+                content: url(../assets/circle-text.png);
+                position: absolute;
+                // left: -55px;
+                left: -7.7%;
+                top: -50px;
+            }
         }
     }
 
@@ -53,16 +60,19 @@ header {
             width: 100%;
             text-align: center;
 
-            .curvedTextContainer {
-                background-size: 80%;
-                width: 16vw;
-                height: 32vh;
-                left: 5.5vw;
-                top: -5vw;
-            }
+            // .curvedTextContainer {
+            //     background-size: 80%;
+            //     width: 16vw;
+            //     height: 32vh;
+            //     left: 5.5vw;
+            //     top: -5vw;
+            // }
 
             h1 {
                 font-size: 16vw;
+                &::before {
+                    left: 7%;
+                }
             }
         }
     }
@@ -72,9 +82,9 @@ header {
 
     header {
         .headerContainer {
-            .curvedTextContainer {
-                top: -3vw;
-            }
+            // .curvedTextContainer {
+            //     top: -3vw;
+            // }
 
             .headerImgContainer {
                 width: 80%;
@@ -90,9 +100,9 @@ header {
 
     header {
         .headerContainer {
-            .curvedTextContainer {
-                top: -1vw;
-            }
+            // .curvedTextContainer {
+            //     top: -1vw;
+            // }
         }
     }
 }
@@ -101,9 +111,9 @@ header {
 
     header {
         .headerContainer {
-            .curvedTextContainer {
-                top: 5vw;
-            }
+            // .curvedTextContainer {
+            //     top: 5vw;
+            // }
         }
     }
 }
