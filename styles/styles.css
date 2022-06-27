@@ -899,15 +899,90 @@ header .headerImgContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog .commentContainer .comment {
+  width: 87%;
+}
+.blog .commentContainer .commenterImg {
+  width: 11.5%;
 }
 .blog .aboutContainer {
   width: 31%;
 }
-.blog .aboutContainer > * > *,
-.blog .blogContainer > *:not(.myForm) > * {
+.blog .aboutContainer > *,
+.blog .blogText,
+.blog .commentContainer {
   background-color: white;
   padding: 35px;
 }
+.blog h4 {
+  margin: 20px 0;
+}
+.blog .profile a {
+  font-weight: bold;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.blog .profile a:hover {
+  color: #709B6B;
+}
+.blog .commentContainer,
+.blog .myForm {
+  margin-top: 25px;
+}
+.blog .recentPosts {
+  margin-top: 25px;
+}
+.blog .recentPosts li {
+  list-style: disc;
+  margin-left: 25px;
+}
 .blog .blogContainer {
-  width: 66.5%;
+  width: 65.4%;
+}
+.blog .blogText p {
+  margin-top: 20px;
+}
+.blog .blogText,
+.blog .blogComments:nth-child(2) {
+  border-bottom: 5px solid #709B6B;
+}
+.blog .myForm {
+  padding-bottom: 75px;
+}
+.blog .myForm fieldset {
+  border: none;
+  font-size: 0;
+}
+.blog .myForm fieldset input,
+.blog .myForm fieldset textarea {
+  border: none;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  color: #1F1F1F;
+  margin-bottom: 20px;
+}
+.blog .myForm fieldset .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog .myForm fieldset input {
+  width: 49%;
+}
+.blog .myForm fieldset textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+.blog .myForm fieldset .button {
+  width: 100%;
 }

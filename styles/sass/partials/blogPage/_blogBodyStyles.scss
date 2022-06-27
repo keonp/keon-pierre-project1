@@ -9,22 +9,104 @@
 
     .commentContainer  {
         display: flex;
-    }
+        justify-content: space-between;
 
+        .comment {
+            width: 87%;
+        }
+        
+        .commenterImg {
+            width: 11.5%;
+        }
+    }
 
     .aboutContainer {
         width: 31%;
     }
 
     .aboutContainer > *,
-    .blogContainer >*:not(.myForm) {
-        > * {
-            background-color: white;
-            padding: 35px;
+    .blogText,
+    .commentContainer {
+        background-color: white;
+        padding: 35px;
+    }
+    
+    h4 {
+        margin: 20px 0;
+    }
+
+    .profile {
+        a {
+            font-weight: bold;
+            color: black;
+            transition: 0.2s;
+            &:hover {
+                color: $greenGrey;
+            }
+        }
+    }
+
+    .commentContainer,
+    .myForm {
+        margin-top: 25px;
+    }
+    
+    .recentPosts {
+        margin-top: 25px;
+        li {
+            list-style: disc;
+            margin-left: 25px;
         }
     }
 
     .blogContainer {
-        width: 66.5%;
+        width: 65.4%;
+    }
+
+    .blogText {
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    .blogText,
+    .blogComments:nth-child(2) {
+        border-bottom: 5px solid $greenGrey;
+    }
+
+    .myForm {
+        padding-bottom: 75px;
+        fieldset {
+            border: none;
+            font-size: 0;
+            input,
+            textarea {
+                border: none;
+                padding: 20px;
+                font-size: 0.9rem;
+                font-family: $fontMontserrat;
+                color: $black;
+                margin-bottom: 20px;
+            }
+
+            .inputs {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            input {
+                width: 49%;
+            }
+
+            textarea {
+                display: block;
+                width: 100%;
+                resize: none;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
     }
 }
