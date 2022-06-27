@@ -323,6 +323,7 @@ p {
 .navBar {
   background-color: #345231;
   padding: 20px 0;
+  position: relative;
 }
 .navBar .wrapper ul {
   display: -webkit-box;
@@ -333,6 +334,41 @@ p {
           justify-content: space-between;
   width: 65%;
   margin: 0 auto;
+}
+.navBar .hamburgerMenu {
+  visibility: hidden;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #F6F6F6;
+  background-color: #345231;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 20;
+  top: 5px;
+  right: 5px;
+}
+.navBar .hamburgerMenu .menuBar {
+  height: 3px;
+  width: 25px;
+  display: block;
+  background-color: #F6F6F6;
+  margin: 5px auto;
+}
+.navBar .hamburgerMenu .slideOutNav {
+  position: fixed;
+  display: none;
 }
 .navBar a, .navBar span {
   font-family: "Montserrat", sans-serif;
@@ -377,6 +413,17 @@ p {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+}
+@media (max-width: 480px) {
+  .navBar .wrapper ul li {
+    display: none;
+  }
+  .navBar .wrapper .slideOutNav ul li {
+    display: block;
+  }
+  .navBar .hamburgerMenu {
+    visibility: visible;
   }
 }
 header {
@@ -705,7 +752,7 @@ header .headerImgContainer img {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 673px) {
+@media (max-width: 656px) {
   .homeFooter .infoContainer {
     width: 100%;
   }
