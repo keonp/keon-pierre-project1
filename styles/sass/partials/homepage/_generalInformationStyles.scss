@@ -14,7 +14,6 @@
         height: 325px;
         > * {
             width: 43%;
-            // width: 50%;
         }
     }
 
@@ -38,7 +37,6 @@
 
     .info2 {
         .generalInfoTextContainer {
-            // justify-content: flex-start;
             text-align: right;
             align-items: flex-end;  
         }
@@ -53,7 +51,7 @@
             position: absolute;
             right: -90px;
             top: -40px;
-            box-shadow: 20px 20px $greenGrey, -20vw 20px $greenGrey;
+            box-shadow: 20px 20px $greenGrey, -333px 20px $greenGrey;
         }
     }
 
@@ -62,7 +60,7 @@
             position: absolute;
             right: 90px;
             top: 15px;
-            box-shadow: 20px 20px $pine, 20vw 20px $pine;
+            box-shadow: 20px 20px $pine, 373px 20px $pine;
         }
     }
 

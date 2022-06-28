@@ -464,6 +464,9 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
+  .navBar .hamburgerMenu:hover .slideOutNav {
+    right: 0;
+  }
   .navBar .hamburgerMenu {
     visibility: visible;
   }
@@ -606,15 +609,15 @@ header .headerImgContainer img {
   position: absolute;
   right: -90px;
   top: -40px;
-  -webkit-box-shadow: 20px 20px #709B6B, -20vw 20px #709B6B;
-          box-shadow: 20px 20px #709B6B, -20vw 20px #709B6B;
+  -webkit-box-shadow: 20px 20px #709B6B, -333px 20px #709B6B;
+          box-shadow: 20px 20px #709B6B, -333px 20px #709B6B;
 }
 .generalInformation .img2 img {
   position: absolute;
   right: 90px;
   top: 15px;
-  -webkit-box-shadow: 20px 20px #345231, 20vw 20px #345231;
-          box-shadow: 20px 20px #345231, 20vw 20px #345231;
+  -webkit-box-shadow: 20px 20px #345231, 373px 20px #345231;
+          box-shadow: 20px 20px #345231, 373px 20px #345231;
 }
 .generalInformation .button a {
   color: inherit;

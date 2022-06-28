@@ -42,9 +42,6 @@
         &:checked ~ .slideOutNav {
             right: 0;
         }
-        &:not(:checked) ~ .slideOutNav {
-        //    display: none;
-        }
     }
 
     .slideOutNav {
@@ -125,10 +122,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
 
-            // a:active {
-            //     color: green;
-            // }
+        .hamburgerMenu:hover .slideOutNav{
+            right: 0;
         }
 
         .hamburgerMenu {
