@@ -321,6 +321,7 @@ p {
 }
 
 .navBar {
+  min-height: 75px;
   background-color: #345231;
   padding: 20px 0;
   position: relative;
@@ -366,9 +367,42 @@ p {
   background-color: #F6F6F6;
   margin: 5px auto;
 }
-.navBar .hamburgerMenu .slideOutNav {
+.navBar input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  right: 0;
+}
+.navBar .slideOutNav {
   position: fixed;
+  background-color: #345231;
+  z-index: 10;
+  top: 0;
+  right: -475px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
   display: none;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.navBar .slideOutNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.navBar .slideOutNav ul li {
+  margin: 15px 0;
+}
+.navBar .slideOutNav ul li:nth-child(3) {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 .navBar a, .navBar span {
   font-family: "Montserrat", sans-serif;
@@ -416,11 +450,19 @@ p {
   }
 }
 @media (max-width: 480px) {
-  .navBar .wrapper ul li {
+  .navBar .wrapper .mainMenu li {
     display: none;
   }
-  .navBar .wrapper .slideOutNav ul li {
-    display: block;
+  .navBar .slideOutNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navBar .hamburgerMenu {
     visibility: visible;
