@@ -464,9 +464,6 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .navBar .hamburgerMenu:hover .slideOutNav {
-    right: 0;
-  }
   .navBar .hamburgerMenu {
     visibility: visible;
   }

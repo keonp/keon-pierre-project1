@@ -39,10 +39,12 @@
     input[type=checkbox] {
         position: absolute;
         opacity: 0;
+
         &:checked ~ .slideOutNav {
             right: 0;
         }
     }
+
 
     .slideOutNav {
         position: fixed;
@@ -122,10 +124,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .hamburgerMenu:hover .slideOutNav{
-            right: 0;
         }
 
         .hamburgerMenu {
