@@ -570,7 +570,7 @@ header .headerImgContainer img {
 
 @media (max-width: 765px) {
   .about .aboutContainer {
-    padding-top: 60%;
+    padding-top: 150px;
   }
 }
 @media (max-width: 480px) {
