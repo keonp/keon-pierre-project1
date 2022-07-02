@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-between;
     }
-
+    
     .commentContainer  {
         display: flex;
         justify-content: space-between;
@@ -22,6 +22,7 @@
 
     .aboutContainer {
         width: 31%;
+        transition: 0.3s;
     }
 
     .aboutContainer > *,

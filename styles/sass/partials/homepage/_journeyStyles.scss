@@ -15,6 +15,7 @@
     }
 
     .genImgContainer {
+        transition: 0.3s;
         width: 27.5%;
         img {
             box-shadow: 20px 20px $greenGrey;

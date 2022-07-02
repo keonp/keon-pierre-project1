@@ -1,6 +1,7 @@
 .about {
     background-color: $whiteShade;
     .aboutContainer {
+        transition: 0.3s;
         padding: 180px 0 90px;
         text-align: center;
         > * {
@@ -13,6 +14,14 @@
     .about {
         .aboutContainer {
             padding-top: 70%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        .aboutContainer {
+            padding-top: 75px;
         }
     }
 }

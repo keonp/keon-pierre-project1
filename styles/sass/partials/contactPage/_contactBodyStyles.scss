@@ -17,10 +17,13 @@
             justify-content: space-between;
             max-width: 195px;
             margin: 40px 20px 30px;
+
             > * {
                 width: 20px;
                 height: 20px;
-                color: $pine;
+                a {
+                    color: $pine;
+                }
             }
 
             i {

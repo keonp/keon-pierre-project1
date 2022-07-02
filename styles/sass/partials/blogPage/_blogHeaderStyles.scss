@@ -5,6 +5,7 @@
     height: 70vh;
     display: flex;
     align-items: flex-end;
+    transition: 0.3s;
     h1 {
         margin-bottom: -16px;
     }
@@ -15,5 +16,11 @@
         h1 {
             text-align: center;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .blogHeader {
+        height: 50vh;
     }
 }

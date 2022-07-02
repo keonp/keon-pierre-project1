@@ -1,6 +1,7 @@
 header {
     background-color: $pine;
     height: 676px;
+    transition: 0.3s;
 
     .headerContainer {
         display: flex;
@@ -31,9 +32,10 @@ header {
     .headerImgContainer {
         margin-top: 50px;
         width: 40%;
-
+        // width: 37%;
+        transition: 0.3s;
         img {
-            box-shadow: 20px 20px $whiteShade;
+            box-shadow: 20px 20px white;
         }
     }
 }
@@ -44,6 +46,7 @@ header {
         .headerContainer {
             flex-direction: column;
             padding-top: 90px;
+            transition: 0.3s;
         }
 
         .headerTextContainer{
@@ -71,5 +74,11 @@ header {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 80vh
     }
 }

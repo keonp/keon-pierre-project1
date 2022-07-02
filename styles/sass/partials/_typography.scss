@@ -37,7 +37,8 @@ h4 {
     text-align: center;
     font-size: 1rem;
     transition: 0.3s;
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: transparent;
     }
 }

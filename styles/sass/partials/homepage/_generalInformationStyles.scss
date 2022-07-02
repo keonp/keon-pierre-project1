@@ -14,6 +14,7 @@
         height: 325px;
         > * {
             width: 43%;
+            transition: 0.3s;
         }
     }
 
@@ -102,6 +103,7 @@
         }
 
         .info2 {
+            padding-bottom: 75px;
             .img2 {
                 order: -1;
             }
