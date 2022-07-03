@@ -7,7 +7,6 @@
     // Section is split between 2 rows of divs called infoContainer
     // Each infoContainer contains 2 divs: 1 div contains an img, 1 div contains text + a link
     // the infoContainers live on top of each other, their contents (2 divs) live beside each other
-
     .infoContainer {
         display: flex;
         justify-content: space-between;

@@ -347,6 +347,9 @@ p {
   height: 60px;
   border: 3px solid #F6F6F6;
   background-color: #345231;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +367,9 @@ p {
   z-index: 20;
   top: 5px;
   right: 5px;
+}
+.navBar .hamburgerMenu:hover, .navBar .hamburgerMenu:focus {
+  background-color: #709B6B;
 }
 .navBar .hamburgerMenu .menuBar {
   height: 3px;
@@ -511,7 +517,7 @@ header .headerTextContainer h1::before {
 }
 header .headerImgContainer {
   margin-top: 50px;
-  width: 40%;
+  width: 37%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -546,8 +552,8 @@ header .headerImgContainer img {
     width: 80%;
   }
   header .headerContainer .headerImgContainer img {
-    -webkit-box-shadow: -20px -20px #F6F6F6;
-            box-shadow: -20px -20px #F6F6F6;
+    -webkit-box-shadow: -20px -20px white;
+            box-shadow: -20px -20px white;
   }
 }
 @media (max-width: 480px) {
@@ -900,12 +906,9 @@ header .headerImgContainer img {
   max-width: 195px;
   margin: 40px 20px 30px;
 }
-.contactBody .contactContainer .socialMediaIcons > * {
-  width: 20px;
-  height: 20px;
-}
 .contactBody .contactContainer .socialMediaIcons > * a {
   color: #345231;
+  display: inline-block;
 }
 .contactBody .contactContainer .socialMediaIcons i {
   font-size: 1.4rem;

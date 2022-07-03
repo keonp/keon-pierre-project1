@@ -31,8 +31,7 @@ header {
 
     .headerImgContainer {
         margin-top: 50px;
-        width: 40%;
-        // width: 37%;
+        width: 37%;
         transition: 0.3s;
         img {
             box-shadow: 20px 20px white;
@@ -41,7 +40,6 @@ header {
 }
 
 @media (max-width: 1150px) {
-
     header {
         .headerContainer {
             flex-direction: column;
@@ -64,13 +62,12 @@ header {
 }
 
 @media (max-width: 765px) {
-
     header {
         .headerContainer {
             .headerImgContainer {
                 width: 80%;
                 img {
-                    box-shadow: -20px -20px $whiteShade;
+                    box-shadow: -20px -20px white;
                 }
             }
         }
