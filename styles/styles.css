@@ -923,6 +923,9 @@ header .headerImgContainer img {
   font-weight: bold;
   margin-bottom: 30px;
 }
+.contactBody .contactContainer .textContainer p:first-child a {
+  color: #1F1F1F;
+}
 .contactBody .myForm {
   width: 68%;
 }
