@@ -41,6 +41,11 @@ h4 {
     &:focus {
         background-color: transparent;
     }
+
+    &:focus {
+        border: 1px solid blue;
+        outline: 0;
+    }
 }
 
 @mixin menuText {
