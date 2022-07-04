@@ -41,7 +41,8 @@
             font-weight: bold;
             color: black;
             transition: 0.2s;
-            &:hover {
+            &:hover,
+            &:focus {
                 color: $greenGrey;
             }
         }

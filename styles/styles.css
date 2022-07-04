@@ -555,10 +555,6 @@ header .headerImgContainer img {
   header .headerContainer .headerImgContainer {
     width: 80%;
   }
-  header .headerContainer .headerImgContainer img {
-    -webkit-box-shadow: -20px -20px white;
-            box-shadow: -20px -20px white;
-  }
 }
 @media (max-width: 480px) {
   header {
@@ -789,7 +785,7 @@ header .headerImgContainer img {
       flex-wrap: wrap;
 }
 .homeFooter .textContainer {
-  max-width: 541px;
+  max-width: 544px;
 }
 .homeFooter .textContainer h3 {
   margin-top: 6px;
@@ -1066,7 +1062,7 @@ header .headerImgContainer img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.blog .profile a:hover {
+.blog .profile a:hover, .blog .profile a:focus {
   color: #709B6B;
 }
 .blog .commentContainer,
