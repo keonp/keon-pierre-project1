@@ -1,9 +1,11 @@
-// On hamburger menu click:
-    // change spans to form an X
-    // Get rid of checkbox option...
-    // toggle the slide out menu
+// Objective:
+    // On hamburger menu click change spans to form an X
+    // Get rid of checkbox label method
+    // Toggle the slide out menu to default position when screen width is expanded passed mobile width
 
 const hamburgerMenu = document.querySelector('.hamburgerMenu');
+
+const aboutLink = document.querySelector('.closeMenu');
 
 hamburgerMenu.addEventListener('click', function(event) {
     // Store event in a variable
@@ -33,14 +35,26 @@ hamburgerMenu.addEventListener('click', function(event) {
 
     // Window resize listen event
     window.addEventListener('resize', function() {
+
+        // Store screen width in a variable
         const windowWidth = window.innerWidth;
 
         // When screen is beyond 480 remove slidein, top, middle, bottom bar classes
         if (windowWidth > 480) {
-            slideOutNav.classList.remove('slideIn');
-            topBar.classList.remove('topMenuBar');
-            middleBar.classList.remove('middleMenuBar');
-            bottomBar.classList.remove('bottomMenuBar');
+            toggleOff(slideOutNav, topBar, middleBar, bottomBar);
         }
     })
+
+    // Close out nav when about is clicked since about links to an on page section for the homepage and blog
+    aboutLink.addEventListener('click', function() {
+        toggleOff(slideOutNav, topBar, middleBar, bottomBar);
+    })
 })
+
+// Function to change the spans and slide out nav to their default positions by removing the classes that were toggled on
+function toggleOff(nav, topSpan, middleSpan, bottomSpan) {
+    nav.classList.remove('slideIn');
+    topSpan.classList.remove('topMenuBar');
+    middleSpan.classList.remove('middleMenuBar');
+    bottomSpan.classList.remove('bottomMenuBar');
+}
