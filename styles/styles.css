@@ -377,10 +377,16 @@ p {
 }
 .navBar .hamburgerMenu .menuBar {
   height: 3px;
-  width: 25px;
+  width: 40px;
   display: block;
   background-color: #F6F6F6;
   margin: 5px auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.navBar .hamburgerMenu .midBar {
+  -webkit-transition: none;
+  transition: none;
 }
 .navBar input[type=checkbox] {
   position: absolute;
@@ -439,6 +445,20 @@ p {
   color: #F6F6F6;
   font-family: "Abril Fatface", cursive;
   font-size: 2.1rem;
+}
+
+.topMenuBar {
+  -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+          transform: rotate(-45deg) translate(-9px, 9px);
+}
+
+.middleMenuBar {
+  visibility: hidden;
+}
+
+.bottomMenuBar {
+  -webkit-transform: rotate(45deg) translate(-9px, -9px);
+          transform: rotate(45deg) translate(-9px, -9px);
 }
 
 @media (max-width: 930px) {

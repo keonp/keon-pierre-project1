@@ -36,10 +36,15 @@
 
         .menuBar {
             height: 3px;
-            width: 25px;
+            width: 40px;
             display: block;
             background-color: $whiteShade;
             margin: 5px auto;
+            transition: 0.5s;
+        }
+        
+        .midBar {
+            transition: none;
         }
     }
 
@@ -100,6 +105,18 @@
         font-family: $fontAbrilFatface;
         font-size: 2.1rem;
     }
+}
+
+.topMenuBar {
+    transform: rotate(-45deg) translate(-9px, 9px);
+}
+
+.middleMenuBar {
+    visibility: hidden;
+}
+
+.bottomMenuBar {
+    transform: rotate(45deg) translate(-9px, -9px);
 }
 
 @media (max-width: 930px) {
