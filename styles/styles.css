@@ -385,15 +385,8 @@ p {
   transition: 0.5s;
 }
 .navBar .hamburgerMenu .midBar {
-  -webkit-transition: none;
-  transition: none;
-}
-.navBar input[type=checkbox] {
-  position: absolute;
-  opacity: 0;
-}
-.navBar input[type=checkbox]:checked ~ .slideOutNav {
-  right: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .navBar .slideOutNav {
   position: fixed;
@@ -424,6 +417,12 @@ p {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+.navBar .slideIn {
+  right: 0;
+}
+.navBar .slideOut {
+  right: -475px;
 }
 .navBar a, .navBar span {
   font-family: "Montserrat", sans-serif;

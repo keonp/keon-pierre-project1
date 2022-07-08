@@ -42,20 +42,20 @@
             margin: 5px auto;
             transition: 0.5s;
         }
-        
+
         .midBar {
-            transition: none;
+            transition: 0.2s;
         }
     }
 
-    input[type=checkbox] {
-        position: absolute;
-        opacity: 0;
+    // input[type=checkbox] {
+    //     position: absolute;
+    //     opacity: 0;
 
-        &:checked ~ .slideOutNav {
-            right: 0;
-        }
-    }
+    //     &:checked ~ .slideOutNav {
+    //         right: 0;
+    //     }
+    // }
 
 
     .slideOutNav {
@@ -83,6 +83,14 @@
         ul li:nth-child(3) {
             order: -1;
         }
+    }
+
+    .slideIn {
+        right: 0;
+    }
+
+    .slideOut {
+        right: -475px;
     }
 
     a, span {

@@ -4,6 +4,8 @@
     // toggle the slide out menu
 
 const hamburgerMenu = document.querySelector('.hamburgerMenu');
+const slideOutNav = document.querySelector('.slideOutNav');
+let windowWidth;
 
 
 hamburgerMenu.addEventListener('click', function(event) {
@@ -24,4 +26,15 @@ hamburgerMenu.addEventListener('click', function(event) {
     topBar.classList.toggle('topMenuBar');
     middleBar.classList.toggle('middleMenuBar');
     bottomBar.classList.toggle('bottomMenuBar');
+
+    slideOutNav.classList.toggle('slideIn');
 })
+
+// Window resize listen event
+
+// window.addEventListener('resize', function() {
+//     windowWidth = window.innerWidth;
+//     if (windowWidth > 480) {
+//         slideOutNav.classList.toggle('slideOut');
+//     }
+// })
