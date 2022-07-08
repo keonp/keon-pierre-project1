@@ -381,12 +381,6 @@ p {
   display: block;
   background-color: #F6F6F6;
   margin: 5px auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.navBar .hamburgerMenu .midBar {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 .navBar .slideOutNav {
   position: fixed;
@@ -420,9 +414,6 @@ p {
 }
 .navBar .slideIn {
   right: 0;
-}
-.navBar .slideOut {
-  right: -475px;
 }
 .navBar a, .navBar span {
   font-family: "Montserrat", sans-serif;
@@ -500,6 +491,14 @@ p {
   }
   .navBar .hamburgerMenu {
     visibility: visible;
+  }
+  .navBar .menuBar {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navBar .midBar {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 }
 header {
