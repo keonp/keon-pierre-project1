@@ -36,14 +36,12 @@
 
             <!-- Citation: Hamburger Menu concept taken from:
             https://www.youtube.com/watch?v=flItyHiDm7E -->
-            <input type="checkbox" name="openMenu" id="openMenu">
-            <label for="openMenu">
-                <div class="hamburgerMenu">
-                    <span class="menuBar"></span>
-                    <span class="menuBar"></span>
-                    <span class="menuBar"></span>
-                </div>
-            </label>
+
+            <div class="hamburgerMenu">
+                <span class="menuBar"></span>
+                <span class="menuBar midBar"></span>
+                <span class="menuBar"></span>
+            </div>
 
             <nav class="slideOutNav">
                 <ul>
@@ -51,7 +49,7 @@
                         <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" class="closeMenu">About</a>
                     </li>
                     <li>
                         <span class="logo">Willow</span>
@@ -79,7 +77,7 @@
             <div class="wrapper">
 
                 <!-- LEFT COLUMN -->
-                <div class="aboutContainer">
+                <div class="aboutContainer" id="about">
                     <div class="profile">
                         <div class="profileImgContainer">
                             <img src="./assets/blog-image-2.jpg" alt="Designer, Willow, with folliage obsecuring part of her face. Looking at camera, wearing a yellow raincoat">
@@ -179,5 +177,8 @@
             <p>Copyright &copy; 2022 Juno College</p>
         </div>
     </footer>
+
+    <!-- Javascript link -->
+    <script src="./script.js"></script>
 </body>
 </html>

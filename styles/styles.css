@@ -352,8 +352,6 @@ p {
   border: 3px solid #F6F6F6;
   background-color: #345231;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,27 +372,22 @@ p {
 }
 .navBar .hamburgerMenu:hover, .navBar .hamburgerMenu:focus {
   background-color: #709B6B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .navBar .hamburgerMenu .menuBar {
   height: 3px;
-  width: 25px;
+  width: 40px;
   display: block;
   background-color: #F6F6F6;
   margin: 5px auto;
-}
-.navBar input[type=checkbox] {
-  position: absolute;
-  opacity: 0;
-}
-.navBar input[type=checkbox]:checked ~ .slideOutNav {
-  right: 0;
 }
 .navBar .slideOutNav {
   position: fixed;
   background-color: #345231;
   z-index: 10;
   top: 0;
-  right: -475px;
+  right: -480px;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -419,6 +412,9 @@ p {
       -ms-flex-order: -1;
           order: -1;
 }
+.navBar .slideIn {
+  right: 0;
+}
 .navBar a, .navBar span {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -439,6 +435,20 @@ p {
   color: #F6F6F6;
   font-family: "Abril Fatface", cursive;
   font-size: 2.1rem;
+}
+
+.topMenuBar {
+  -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+          transform: rotate(-45deg) translate(-9px, 9px);
+}
+
+.middleMenuBar {
+  visibility: hidden;
+}
+
+.bottomMenuBar {
+  -webkit-transform: rotate(45deg) translate(-9px, -9px);
+          transform: rotate(45deg) translate(-9px, -9px);
 }
 
 @media (max-width: 930px) {
@@ -481,6 +491,14 @@ p {
   }
   .navBar .hamburgerMenu {
     visibility: visible;
+  }
+  .navBar .menuBar {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navBar .midBar {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 }
 header {
